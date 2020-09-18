@@ -1,0 +1,26 @@
+{{> cabeceralogin}}
+<section>
+    <div class="container">
+        <div class="row justify-content-center h-100">
+            <form class="reserva " method="POST" action="/login-admin">
+                <div class="logologin">
+                    <img src="img/Logo HYS.png" class="avatar" alt="Avatar Image">
+                </div>
+                <hr>
+                <div class="info ">
+                    <label><strong>Usuario</strong></label>
+                    <input type="email" class="form-control form-control-sm" name="emailUser"
+                        placeholder="name@example.com">
+
+                    <label for="" class="mt-3"><strong>contraseña</strong></label>
+                    <input type="password" class="form-control form-control-sm" name="passUser">
+
+                    <button id="btnlogin" class="btn btn-danger btn-lg btn-block mt-3">Login</button>
+                </div>
+                <!--<a onclick="registarUsuario()" class="btn btn-primary mt-3  ">Registrate</a>-->
+            </form>
+        </div>
+    </div>
+</section>
+
+{{> footer}}

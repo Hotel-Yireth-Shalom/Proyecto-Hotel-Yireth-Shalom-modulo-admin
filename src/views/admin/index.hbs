@@ -1,0 +1,188 @@
+{{> cabeceraadmin}}
+
+<section class="administrador">
+    <div class="container">
+        <h1 class="text-center mt-3">Modulo Administador</h1>
+        <div class="row justify-content-center h-100">
+            <form class="reservap needs-validation" method="POST" action="/admin" novalidate>
+                <div class="info">
+                    <div><label for="" class="mt-3"><strong>Nombre</strong> </label>
+                        <input type="text" class="form-control form-control-sm" name="nombre"
+                            placeholder="Ingrese su nombre" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Ingrese su nombre.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+
+                    <div><label for="" class="mt-3"><strong>Apellido</strong></label>
+                        <input type="text" class="form-control form-control-sm" name="apellido"
+                            placeholder="Ingrese su apellido" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Ingrese su apellido.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+
+                    <div> <label for="" class="mt-3"><strong>Correo electronico</strong></label>
+                        <input type="email" class="form-control form-control-sm" name="correoelectronico"
+                            placeholder="name@example.com" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Ingrese un correo electronico.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+                    <div> <label for="" class="mt-3"><strong>Telefono</strong></label>
+                        <input type="text" class="form-control form-control-sm" name="telefono"
+                            placeholder="Su numero telefonico" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Ingrese numero telefonico.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+
+
+                    <div> <label for="" class="mt-3"><strong>Fecha de entrada</strong></label>
+                        <input type="date" class="form-control foe
+                        entradarm-control-sm" name="fechaentrada" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Seleccione una fecha de entrada.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+
+                    <div><label for="" class="mt-3"><strong>Fecha de salida</strong></label>
+                        <input type="date" class="form-control foe
+                        entradarm-control-sm" name="fechasalida" id="validationCustom01" required>
+                        <div class="invalid-feedback">
+                            Seleccione una fecha de salida.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+
+                    <div> <label for="" class="mt-3"><strong>Tipos De Habitacion</strong></label>
+                        <select class="custom-select" name="tipohabitacion" id="validationCustom04" required>
+                            <option selected disabled value>...</option>
+                            <option value="Sencilla">Sencilla</option>
+                            <option value="Doble">Doble</option>
+                            <option value="Estandar Doble">Estandar Doble</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Seleccione una tipo de habitacion.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+                    <div><label for="" class="mt-3"><strong>Numero de Habitacion</strong></label>
+                        <select class="custom-select" name="nhabitacion" id="validationCustom04" required>
+                            <option selected disabled value>...</option>
+                            <option value="">Sencilla</option>
+                            <option value="101">101</option>
+                            <option value="102">102</option>
+                            <option value="103">103</option>
+                            <option value="104">104</option>
+                            <option value="105">105</option>
+                            <option value="">Doble</option>
+                            <option value="201">201</option>
+                            <option value="202">202</option>
+                            <option value="203">203</option>
+                            <option value="204">204</option>
+                            <option value="205">205</option>
+                            <option value="206">206</option>
+                            <option value="207">207</option>
+                            <option value="208">208</option>
+                            <option value="">Estandar Doble</option>
+                            <option value="209">209</option>
+                            <option value="210">210</option>
+                            <option value="211">211</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Seleccione un numero de habitacion.
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <label for="" class="mt-3"><strong>Estado</strong></label>
+                        <select class="custom-select" name="estadoo" value="Pendiente" id="validationCustom04" required>
+                            <option selected disabled value>...</option>
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="Reservado">Reservado</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Seleccione un tipo de estado .
+                        </div>
+                        <div class="valid-feedback">
+                            Muy bien!
+                        </div>
+                    </div>
+
+                    <button id="btnreserva" class="btn btn-danger btn-lg btn-block mt-3" type="submit">Reservar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="tablaclientes col">
+        <h2>Clientes </h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Correo electronico</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Fecha de entrada</th>
+                        <th scope="col">Fecha de salida</th>
+                        <th scope="col">Tipos de habitacion</th>
+                        <th scope="col">N° habitacion</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each clientes}}
+                    <tr>
+                        <td>{{nombre}}</td>
+                        <td>{{apellido}}</td>
+                        <td>{{correoe_lectronico}}</td>
+                        <td>{{telefono}}</td>
+                        <td>{{fecha_de_entrada}}</td>
+                        <td>{{fecha_de_salida}}</td>
+                        <td>{{tipo_habitacion}}</td>
+                        <td>{{numero_habitacion}}</td>
+                        <td>{{estado_cliente}}</td>
+                        <td><a href="/eliminar-clientes/{{@key}}" class="btn btn-danger"><i
+                                    class="far fa-trash-alt"></i></a>
+                            <a href="/editar-clientes/{{@key}}" class="btn btn-info"><i class="far fa-edit"></i></a>
+                        </td>
+                        <!--<button href="/delete-clientes/{{@key}}" class="btn btn-danger"><i
+                                        class="far fa-trash-alt"></i></button>
+                                        <button class="btn btn-info"><i class="far fa-edit"></i></button></td>  -->
+                    </tr>
+
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+{{> footer}}

@@ -1,0 +1,104 @@
+/*.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+
+header {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 17px;
+    background: #343A40;
+}
+
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0;
+    background: #343A40;
+    color: white;
+
+}
+
+.derechosr {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/*----------------------------*/
+
+
+.reservap {
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1.2px solid #bebebe5d;
+    padding: 10px 25px 15px 25px;
+    font-size: 16px;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 353px;
+}
+
+.reservap p {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 13px;
+}
+
+.reservap p strong {
+    color: #900048;
+    ;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.administrador {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.tablaclientes {
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1.2px solid #bebebe5d;
+    padding: 10px 25px 15px 25px;
+    font-size: 16px;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 95%;
+    
+}
+
+thead tr {
+    font-size: 14px;
+}
+
+tbody {
+    font-size: 14px;
+}
+
+.logologin {
+    margin: auto;
+    width: 100px;
+}
+
+.logologin img {
+    width: 100px;
+}
+.reserva {
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1.2px solid #bebebe5d;
+    padding: 10px 25px 15px 25px;
+    font-size: 16px;
+    font-family: 'Nanum Myeongjo', serif;
+}
