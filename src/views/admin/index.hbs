@@ -169,13 +169,10 @@
                         <td>{{tipo_habitacion}}</td>
                         <td>{{numero_habitacion}}</td>
                         <td>{{estado_cliente}}</td>
-                        <td><a href="/eliminar-clientes/{{@key}}" class="btn btn-danger"><i
-                                    class="far fa-trash-alt"></i></a>
-                            <a href="/editar-clientes/{{@key}}" class="btn btn-info"><i class="far fa-edit"></i></a>
+                        <td><a href="/eliminarclentes/{{idcliente}}" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
+                            <a href="/editarclentes/{{@key}}" class="btn btn-info"><i class="far fa-edit"></i></a>
                         </td>
-                        <!--<button href="/delete-clientes/{{@key}}" class="btn btn-danger"><i
-                                        class="far fa-trash-alt"></i></button>
-                                        <button class="btn btn-info"><i class="far fa-edit"></i></button></td>  -->
+                        
                     </tr>
 
                     {{/each}}
