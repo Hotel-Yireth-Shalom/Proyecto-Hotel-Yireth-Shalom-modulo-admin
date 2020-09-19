@@ -13,6 +13,8 @@ router.post('/login', controlador.registarUsuario);
 router.post('/login-admin', controlador.initlogin)
 router.post('/cerrarsesion', controlador.cerrarSesion)
 
+router.post('/actualizarDatos', controlador.actualizarDatos)
+
 router.get('/eliminarclentes/:id', controlador.eliminarclientes)
 router.get('/editarclentes/:id', controlador.editarclientes)
 
